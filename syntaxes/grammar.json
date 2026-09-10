@@ -61,6 +61,9 @@
                     "include": "#scope_bound"
                 },
                 {
+                    "include": "#numbers"
+                },
+                {
                     "include": "#phone"
                 }
             ]
@@ -124,6 +127,10 @@
         "scope_bound": {
             "name": "punctuation.bound.cscsca",
             "match": "(?!\\\\)(\\\\\\\\)*(\\(|\\)|\\{|\\}|\\[|\\])"
+        },
+        "numbers": {
+            "name": "constant.numeric.cscsca",
+            "match": "\\b[0-9]+\\b"
         },
         "phone": {
             "name": "variable.phone.cscsca",
